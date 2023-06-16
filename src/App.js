@@ -53,6 +53,7 @@ const App = () => {
 
 					<div className="ButtonContainer">
 						<button
+							disabled={status === "recording" ? true : false}
 							onClick={() => {
 								if (mediaBlobUrl) setWatch(true);
 								else toast.warn("Record first");
@@ -60,13 +61,16 @@ const App = () => {
 							Watch
 						</button>
 						<button
+							disabled={status === "recording" ? true : false}
 							onClick={() => {
 								if (mediaBlobUrl) download();
 								else toast.warn("Record first");
 							}}>
 							Download
 						</button>
-						<button onClick={() => toast.info("Coming soon")}>Upload</button>
+						<button disabled={status === "recording" ? true : false} onClick={() => toast.info("Coming soon")}>
+							Upload
+						</button>
 					</div>
 				</div>
 

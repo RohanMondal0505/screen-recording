@@ -41,6 +41,16 @@
 			font-size: 2rem;
 			background: #00aeff;
 			border: 1px solid #00aeff;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				background: #006695;
+			}
+
+			&:disabled {
+				background: #9c9c9c;
+				cursor: default;
+			}
 		}
 
 		.RecordBtn {
@@ -51,6 +61,11 @@
 			color: #f00;
 			background: transparent;
 			margin-bottom: 5rem;
+
+      &:hover {
+				background: #f00;
+        color: #fff;
+			}
 		}
 
 		.ButtonContainer {
