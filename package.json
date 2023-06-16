@@ -1,5 +1,6 @@
 {
 	"name": "screen-recording",
+	"homepage": "https://rohanmondal0505.github.io/screen-recording",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
