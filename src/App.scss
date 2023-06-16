@@ -1,3 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+.Toastify {
+	position: absolute;
+	z-index: 999999;
+	font-size: 16px;
+}
+
 .App {
-  text-align: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-top: 10rem;
+	gap: 5rem;
+
+	.Container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-width: 50rem;
+
+		button {
+			width: 20rem;
+			padding: 2rem;
+			border: none;
+			cursor: pointer;
+			border-radius: 1rem;
+			color: #fff;
+			font-size: 2rem;
+			background: #00aeff;
+			border: 1px solid #00aeff;
+		}
+
+		.RecordBtn {
+			margin-bottom: 5rem;
+		}
+		.StopBtn {
+			border: 1px solid #f00;
+			color: #f00;
+			background: transparent;
+			margin-bottom: 5rem;
+		}
+
+		.ButtonContainer {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			gap: 4rem;
+		}
+	}
+
+	video {
+		width: 50rem;
+		box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.3);
+	}
 }
