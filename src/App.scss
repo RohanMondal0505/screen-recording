@@ -24,12 +24,26 @@
 	flex-direction: column;
 	padding-top: 10rem;
 	gap: 5rem;
+	overflow-y: scroll;
+	scrollbar-width: none;
+
+	@media screen and (max-width: 700px) {
+		padding-top: 3rem;
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
 	.Container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		min-width: 50rem;
+
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
 
 		button {
 			width: 20rem;
@@ -55,6 +69,9 @@
 
 		.RecordBtn {
 			margin-bottom: 5rem;
+      @media screen and (max-width: 700px) {
+        margin-bottom: 2rem;
+      }
 		}
 		.StopBtn {
 			border: 1px solid #f00;
@@ -62,9 +79,13 @@
 			background: transparent;
 			margin-bottom: 5rem;
 
-      &:hover {
+			@media screen and (max-width: 700px) {
+				margin-bottom: 2rem;
+			}
+
+			&:hover {
 				background: #f00;
-        color: #fff;
+				color: #fff;
 			}
 		}
 
@@ -73,11 +94,21 @@
 			display: flex;
 			justify-content: space-between;
 			gap: 4rem;
+			align-items: center;
+
+			@media screen and (max-width: 700px) {
+				flex-direction: column;
+				gap: 1.5rem;
+			}
 		}
 	}
 
 	video {
 		width: 50rem;
 		box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.3);
+
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
 	}
 }

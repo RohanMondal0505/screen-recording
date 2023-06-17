@@ -16,6 +16,7 @@ const App = () => {
 		document.body.appendChild(link);
 		link.click();
 		link.parentNode.removeChild(link);
+		toast.success("Video Downloaded");
 	};
 
 	return (
@@ -36,6 +37,7 @@ const App = () => {
 						<button
 							onClick={() => {
 								stopRecording();
+								toast.success("Recording Stopped");
 							}}
 							className="StopBtn">
 							Stop Recording
@@ -44,7 +46,6 @@ const App = () => {
 						<button
 							onClick={() => {
 								startRecording();
-								toast.success("Recording Stopped");
 							}}
 							className="RecordBtn">
 							{mediaBlobUrl ? "Record Again" : "Start Recording"}
