@@ -85,14 +85,14 @@ const Record = () => {
 							}}>
 							Watch
 						</button>
-						<button
+						{/* <button
 							disabled={status === "recording" ? true : false}
 							onClick={() => {
 								if (mediaBlobUrl) download();
 								else toast.warn("Record first");
 							}}>
 							Download
-						</button>
+						</button> */}
 						<button disabled={status === "recording" ? true : false || isLoading} onClick={() => upload()}>
 							{isLoading ? "Uploading..." : "Upload"}
 						</button>
