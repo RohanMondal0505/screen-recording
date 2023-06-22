@@ -1,0 +1,225 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+.Toastify {
+	position: absolute;
+	z-index: 999999;
+	font-size: 16px;
+}
+
+.NavigatePage {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+	background: #000;
+
+	a {
+		display: block;
+		text-decoration: none;
+		border: none;
+		padding: 3rem 10rem;
+		background: #00aeff;
+		color: #fff;
+		border-radius: 2rem;
+		font-size: 3rem;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background: #004b6e;
+		}
+	}
+}
+
+.Record {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10rem;
+	gap: 5rem;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	background: #000;
+
+	@media screen and (max-width: 700px) {
+		padding-top: 3rem;
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	.Container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-width: 50rem;
+
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
+
+		button {
+			width: 20rem;
+			padding: 2rem;
+			border: none;
+			cursor: pointer;
+			border-radius: 1rem;
+			color: #fff;
+			font-size: 2rem;
+			background: #00aeff;
+			border: 1px solid #00aeff;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				background: #006695;
+			}
+
+			&:disabled {
+				background: #9c9c9c;
+				cursor: default;
+			}
+		}
+
+		.RecordBtn {
+			margin-bottom: 5rem;
+			@media screen and (max-width: 700px) {
+				margin-bottom: 2rem;
+			}
+		}
+		.StopBtn {
+			border: 1px solid #f00;
+			color: #f00;
+			background: transparent;
+			margin-bottom: 5rem;
+
+			@media screen and (max-width: 700px) {
+				margin-bottom: 2rem;
+			}
+
+			&:hover {
+				background: #f00;
+				color: #fff;
+			}
+		}
+
+		.ButtonContainer {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			gap: 4rem;
+			align-items: center;
+
+			@media screen and (max-width: 700px) {
+				flex-direction: column;
+				gap: 1.5rem;
+			}
+		}
+	}
+
+	video {
+		width: 50rem;
+		box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.3);
+
+		@media screen and (max-width: 700px) {
+			width: 100%;
+		}
+	}
+
+	.urlContainer{
+		margin-top: 3rem;
+		width: 50rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
+
+		p{
+			font-size: 2rem;
+			color: #fff;
+			text-align: center;
+		}
+
+		button{
+			border: none;
+			padding: 2rem 5rem;
+			font-size: 2rem;
+			background: #00aeff;
+			color: #fff;
+			border-radius: 1rem;
+			transition: all 0.2s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				background: #006695;
+			}
+		}
+	}
+}
+
+.Watch {
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	overflow-y: scroll;
+	scrollbar-width: none;
+
+	&::-webkit-scrollbar{
+		display: none;
+	}
+
+	.videoBox{
+		width: 80rem;
+		min-height: 40rem;
+		max-height: 40rem;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 3rem;
+		margin: 0 auto;
+		margin-bottom: 3rem;
+		border-bottom: 1px solid #fff;
+
+		p{
+			font-size: 3rem;
+			color: #fff;
+		}
+
+		video{
+			height: 100%;
+			width: 55rem;
+			box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.3);
+		}
+
+		button{
+			border: none;
+			padding: 1rem 2rem;
+			font-size: 2rem;
+			background: #00aeff;
+			color: #fff;
+			border-radius: 1rem;
+			transition: all 0.2s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				background: #006695;
+			}
+		}
+	}
+}
