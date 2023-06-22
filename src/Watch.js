@@ -22,7 +22,8 @@ const Watch = () => {
 
 	return (
 		<div className="Watch">
-			{videoList.map((url, index) => (
+			{videoList.length === 0 && <h1>No Recording</h1>}
+			{[...videoList].reverse().map((url, index) => (
 				<div key={index} className="videoBox">
 					<p>{index + 1}</p>
 					<video src={url} controls autoPlay={false}></video>

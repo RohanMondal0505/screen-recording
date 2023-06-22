@@ -182,7 +182,12 @@
 	&::-webkit-scrollbar{
 		display: none;
 	}
-
+h1{
+	text-align: center;
+	color: #fff;
+	margin-top: 10rem;
+	font-size: 5rem;
+}
 	.videoBox{
 		width: 80rem;
 		min-height: 40rem;
