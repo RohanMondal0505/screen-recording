@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/screen-recording/static/css/main.7c277e99.css",
-    "main.js": "/screen-recording/static/js/main.249764c2.js",
+    "main.js": "/screen-recording/static/js/main.8a767111.js",
     "index.html": "/screen-recording/index.html",
     "main.7c277e99.css.map": "/screen-recording/static/css/main.7c277e99.css.map",
-    "main.249764c2.js.map": "/screen-recording/static/js/main.249764c2.js.map"
+    "main.8a767111.js.map": "/screen-recording/static/js/main.8a767111.js.map"
   },
   "entrypoints": [
     "static/css/main.7c277e99.css",
-    "static/js/main.249764c2.js"
+    "static/js/main.8a767111.js"
   ]
 }
