@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const NavigatePage = () => {
 	return (
 		<div className="NavigatePage">
-			<Link to="/recording">Record Screen</Link>
-			<Link to="/watch">Watch Screen Recording</Link>
+			<Link to="/screen-recording/recording">Record Screen</Link>
+			<Link to="/screen-recording/watch">Watch Screen Recording</Link>
 		</div>
 	);
 };

@@ -22,9 +22,9 @@ const Router = () => {
 
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<NavigatePage />} />
-					<Route path="/recording" element={<Record />} />
-					<Route path="/watch" element={<Watch />} />
+					<Route path="/screen-recording/" element={<NavigatePage />} />
+					<Route path="/screen-recording/recording" element={<Record />} />
+					<Route path="/screen-recording/watch" element={<Watch />} />
 				</Routes>
 			</BrowserRouter>
 		</>
