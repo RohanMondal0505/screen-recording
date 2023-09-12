@@ -38,7 +38,6 @@ const Record = () => {
 			setIsLoading(true);
 			const videoBlob = await fetch(mediaBlobUrl).then((r) => r.blob());
 			const videoFile = new File([videoBlob], `screen_recording_${new Date().getTime()}.mp4`, { type: "audio/mp4" });
-			console.log(videoFile);
 			const videoRef = ref(storage, `videos/${videoFile.name}`);
 			uploadBytes(videoRef, videoFile).then((data) => {
 				toast.success("Video Uploaded Successfully !");
